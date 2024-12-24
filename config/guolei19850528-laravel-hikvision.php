@@ -6,5 +6,14 @@
  * Git:https://github.com/guolei19850528/laravel-hikvision
  */
 return [
-
+    'isc' => [
+        'urls' => [],
+        'hosts' => [
+            'your key' => [
+                'host' => 'your host',
+                'ak' => 'your ak',
+                'sk' => 'your sk',
+            ]
+        ]
+    ]
 ];

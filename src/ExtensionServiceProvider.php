@@ -21,6 +21,6 @@ class ExtensionServiceProvider extends ServiceProvider
         /**
          * 发布配置文件
          */
-        $this->publishes([__DIR__ . '/../config/guolei19850528-laravel-tiehu.php' => config_path('guolei19850528-laravel-tiehu.php')], 'guolei19850528/laravel-tiehu');
+        $this->publishes([__DIR__ . '/../config/guolei19850528-laravel-hikvision.php' => config_path('guolei19850528-laravel-hikvision.php')], 'guolei19850528/laravel-hikvision');
     }
 }
