@@ -110,7 +110,20 @@ class Isc
         return $headers->toArray();
     }
 
-    public function requestWithHeaders(
+    /**
+     * 带签名的请求
+     * @param string|null $method
+     * @param string|null $url
+     * @param array|Collection|null $urlParameters
+     * @param array|Collection|null $data
+     * @param array|Collection|null $query
+     * @param array|Collection|null $headers
+     * @param array|Collection|null $options
+     * @param \Closure|null $responseHandler
+     * @return mixed
+     * @throws \Exception
+     */
+    public function requestWithSignature(
         string|null           $method = 'GET',
         string|null           $url = '',
         array|Collection|null $urlParameters = [],
