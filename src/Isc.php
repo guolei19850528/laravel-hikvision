@@ -144,10 +144,10 @@ class Isc
         \data_fill($options, RequestOptions::CONNECT_TIMEOUT, 300);
         \data_fill($options, RequestOptions::TIMEOUT, 300);
         \data_fill($options, RequestOptions::READ_TIMEOUT, 3000);
-        \data_fill($options, RequestOptions::FORM_PARAMS, $data->toArray());
+        \data_fill($options, RequestOptions::JSON, $data->toArray());
         \data_fill($options, RequestOptions::QUERY, $query->toArray());
         $response = Http::baseUrl($this->getHost())
-            ->withHeaders($this->headers($method, $url, $headers->toArray()))
+            ->withHeaders($this->headers( $url,$method, $headers->toArray()))
             ->withUrlParameters($urlParameters->toArray())
             ->send($method, $url, $options->toArray());
         if ($responseHandler instanceof \Closure) {
