@@ -7,7 +7,9 @@
  */
 return [
     'isc' => [
-        'urls' => [],
+        'urls' => [
+            'artemis_api_resource_v1_org_orgList' => '/artemis/api/resource/v1/org/orgList',
+        ],
         'hosts' => [
             'your key' => [
                 'host' => 'your host',
