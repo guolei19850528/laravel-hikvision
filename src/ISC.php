@@ -17,7 +17,7 @@ use Illuminate\Support\Str;
 /**
  * @see https://open.hikvision.com/docs/docId?productId=5c67f1e2f05948198c909700&version=%2Ff95e951cefc54578b523d1738f65f0a1
  */
-class Isc
+class ISC
 {
     /**
      * @var string
