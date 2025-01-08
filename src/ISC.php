@@ -154,7 +154,7 @@ class ISC
             return \value($responseHandler($response));
         }
         if ($response->ok()) {
-            $json = $response->json();
+            $json = \collect($response->json());
             if (Validator::make($json, ['code' => 'required|integer|size:0'])->messages()->isEmpty()) {
                 return \data_get($json, 'data', []);
             }
